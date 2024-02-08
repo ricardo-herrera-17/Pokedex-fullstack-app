@@ -1,0 +1,50 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.login-form {
+  width: 100%;
+  padding: 2em;
+  position: relative;
+  background: rgba(black, 0.15);
+}
+
+.flex-row {
+  display: flex;
+  margin-bottom: 1em;
+}
+
+.label {
+  width: 2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.input {
+  flex: 1;
+  padding: 1em;
+  border: 0;
+  font-size: 1rem;
+
+  &:focus {
+    outline: none;
+    transition: transform 0.15s ease;
+    transform: scale(1.1);
+  }
+}
+
+.login {
+  display: block;
+  padding: 1em;
+  width: 100%;
+  &:focus {
+    outline: none;
+    transition: transform 0.15s ease;
+    transform: scale(1.1);
+  }
+}

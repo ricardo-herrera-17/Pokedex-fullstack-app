@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  --bg-color1: rgba(255, 255, 255, 0.75);
+  --bg-color2: rgb(43, 114, 246);
+  font-family: Poppins, sans-serif;
+  background-image: linear-gradient(90deg, var(--bg-color1), var(--bg-color1));
+}
+
+.pokedex-app {
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.type-normal {
+  --color: #c2c2a1;
+}
+
+.type-flying {
+  --color: #a890ec;
+}
+
+.type-ghost {
+  --color: #7a939f;
+}
+
+.type-dark {
+  --color: #5c5c5c;
+}
+
+.type-steel {
+  --color: #4962e3;
+}
+
+.type-ground {
+  --color: #f3975a;
+}
+
+.type-poison {
+  --color: #b16ace;
+}
+
+.type-grass {
+  --color: #4bd543;
+}
+
+.type-fire {
+  --color: #fb6c6c;
+}
+
+.type-electric {
+  --color: #ffd86f;
+}
+
+.type-fairy {
+  --color: #f985bb;
+}
+
+.type-bug {
+  --color: #b3e341;
+}
+
+.type-fighting {
+  --color: #ed6a5e;
+}
+
+.type-water {
+  --color: #0aa6dfe4;
+}
+
+.type-psychic {
+  --color: #e87695;
+}
+
+.type-ice {
+  --color: #8bd8f9;
+}
+
+.type-rock {
+  --color: #a6aab6;
+}
+
+.type-dragon {
+  --color: #2e57af;
+}
+
+.pokedex-logo {
+  margin-top: 10px;
+  width: 45vw;
+  text-align: center;
+}

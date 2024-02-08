@@ -1,0 +1,28 @@
+version: "3.8"
+services:
+  client:
+    build: ./client
+    container_name: react-client
+    ports:
+      - "8080:8080"
+    depends_on:
+      - server
+    links:
+      - server
+  server:
+    build: ./server
+    container_name: express-server
+    ports:
+      - "3000:3000"
+    depends_on:
+      - mongodb
+    links:
+      - mongodb
+    stdin_open: true
+    tty: true
+  mongodb:
+    container_name: mongodb-service
+    image: "mongo:7.0"
+    restart: always
+    ports:
+      - "27017:27017"
